@@ -44,6 +44,33 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""c0929a72-c489-4302-a932-6af8bb499e95"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""8989781e-0ae5-453c-8af1-840217bb2ae3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""9a8a3eaa-7a36-4331-bedf-41d3101ae9c3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -178,6 +205,72 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eeed0f42-6983-4b6d-9c40-2354c474f894"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce397bad-458f-457f-9f91-76361926956b"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""842f5a97-7ddd-445b-80d4-f1fca3e8158b"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44f36403-768d-4efd-b879-70735d14ae3e"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8aeb6b3d-b758-4202-87ab-fcad40aa6c3f"",
+                    ""path"": ""<Keyboard>/leftAlt"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""02391234-18b6-4ec2-a782-ddcb43cae3f2"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -188,6 +281,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFloor = asset.FindActionMap("OnFloor", throwIfNotFound: true);
         m_OnFloor_Movement = m_OnFloor.FindAction("Movement", throwIfNotFound: true);
         m_OnFloor_Jump = m_OnFloor.FindAction("Jump", throwIfNotFound: true);
+        m_OnFloor_Look = m_OnFloor.FindAction("Look", throwIfNotFound: true);
+        m_OnFloor_Crouch = m_OnFloor.FindAction("Crouch", throwIfNotFound: true);
+        m_OnFloor_Sprint = m_OnFloor.FindAction("Sprint", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,12 +347,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private List<IOnFloorActions> m_OnFloorActionsCallbackInterfaces = new List<IOnFloorActions>();
     private readonly InputAction m_OnFloor_Movement;
     private readonly InputAction m_OnFloor_Jump;
+    private readonly InputAction m_OnFloor_Look;
+    private readonly InputAction m_OnFloor_Crouch;
+    private readonly InputAction m_OnFloor_Sprint;
     public struct OnFloorActions
     {
         private @PlayerInput m_Wrapper;
         public OnFloorActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_OnFloor_Movement;
         public InputAction @Jump => m_Wrapper.m_OnFloor_Jump;
+        public InputAction @Look => m_Wrapper.m_OnFloor_Look;
+        public InputAction @Crouch => m_Wrapper.m_OnFloor_Crouch;
+        public InputAction @Sprint => m_Wrapper.m_OnFloor_Sprint;
         public InputActionMap Get() { return m_Wrapper.m_OnFloor; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -272,6 +374,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Look.started += instance.OnLook;
+            @Look.performed += instance.OnLook;
+            @Look.canceled += instance.OnLook;
+            @Crouch.started += instance.OnCrouch;
+            @Crouch.performed += instance.OnCrouch;
+            @Crouch.canceled += instance.OnCrouch;
+            @Sprint.started += instance.OnSprint;
+            @Sprint.performed += instance.OnSprint;
+            @Sprint.canceled += instance.OnSprint;
         }
 
         private void UnregisterCallbacks(IOnFloorActions instance)
@@ -282,6 +393,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Look.started -= instance.OnLook;
+            @Look.performed -= instance.OnLook;
+            @Look.canceled -= instance.OnLook;
+            @Crouch.started -= instance.OnCrouch;
+            @Crouch.performed -= instance.OnCrouch;
+            @Crouch.canceled -= instance.OnCrouch;
+            @Sprint.started -= instance.OnSprint;
+            @Sprint.performed -= instance.OnSprint;
+            @Sprint.canceled -= instance.OnSprint;
         }
 
         public void RemoveCallbacks(IOnFloorActions instance)
@@ -303,5 +423,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+        void OnCrouch(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
 }
