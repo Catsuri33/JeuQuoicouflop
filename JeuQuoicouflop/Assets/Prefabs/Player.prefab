@@ -103,6 +103,9 @@ GameObject:
   - component: {fileID: 4403848438413067896}
   - component: {fileID: 5249802200781917475}
   - component: {fileID: 32079410863948130}
+  - component: {fileID: 1418906737163028931}
+  - component: {fileID: 2426865314540050588}
+  - component: {fileID: 3027992146095971970}
   - component: {fileID: 2391788184127125116}
   m_Layer: 0
   m_Name: Player
@@ -177,6 +180,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1418906737163028931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866205568889839655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70304565e41b9ed4ca81441545df77e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2426865314540050588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866205568889839655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b1333aa80e6a274d9a6c0b470cf9def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 4175633484932084309}
+  xSensitivity: 30
+  ySensitivity: 30
+--- !u!114 &3027992146095971970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866205568889839655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca6b4223013c9249aad6751b727441a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  gravity: -9.8
+  jumpHeight: 1.5
 --- !u!143 &2391788184127125116
 CharacterController:
   m_ObjectHideFlags: 0

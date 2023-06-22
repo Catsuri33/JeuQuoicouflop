@@ -427,58 +427,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1603641049 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8866205568889839655, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}
-  m_PrefabInstance: {fileID: 5029433796712345827}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1603641054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603641049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ca6b4223013c9249aad6751b727441a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  gravity: -9.8
-  jumpHeight: 1.5
---- !u!114 &1603641055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603641049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70304565e41b9ed4ca81441545df77e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1603641056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603641049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1333aa80e6a274d9a6c0b470cf9def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 1781983478}
-  xSensitivity: 30
-  ySensitivity: 30
---- !u!20 &1781983478 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4175633484932084309, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}
-  m_PrefabInstance: {fileID: 5029433796712345827}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846240163
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,14 +696,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8866205568889839655, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 1603641055}
-    - targetCorrespondingSourceObject: {fileID: 8866205568889839655, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 1603641056}
-    - targetCorrespondingSourceObject: {fileID: 8866205568889839655, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1603641054}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1bdbc1aa897cc47a7e91dc620dd549, type: 3}

@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: a6b0bc96664c90b4e801f9555872c28b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: dae93309af08c6245a71336fc78abb63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: big sphere
+    second: {fileID: 2100000, guid: 3c5a5c160d86ae040b31ff8e7343a994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clock
+    second: {fileID: 2100000, guid: 2cbc83e1020a1f74892a02d6f8ee4b11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt
+    second: {fileID: 2100000, guid: f732080696c79a84ebb5f8e5d1ddc39e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt gradient
+    second: {fileID: 2100000, guid: 285de1c817c7ca64aa902b7d43b34635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nuketown sign
+    second: {fileID: 2100000, guid: 8d9119770deee8a40b15e8ad9fc1f632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outer2
+    second: {fileID: 2100000, guid: ef7df6f4fbf69334f97c319d9141b5c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pillars
+    second: {fileID: 2100000, guid: 6971a514305df284ba2895aa2452c230, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pillars 2
+    second: {fileID: 2100000, guid: 3f8bb83152ea05d4fb735b0743ca77a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rings
+    second: {fileID: 2100000, guid: bf158c939bbf56440a09d363ec72e545, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spheres small
+    second: {fileID: 2100000, guid: c29feb3a0ed3e80469ba59b2f77dd3ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: text
+    second: {fileID: 2100000, guid: 1cacbb31c12d5784ab229bf0160482b2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clock
+    second: {fileID: 2800000, guid: 21f765793456cec4e8d8df07dbe8f946, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dirt
+    second: {fileID: 2800000, guid: 49cc11901d7e9ab42ab2a039e2eff2c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dirt gradient
+    second: {fileID: 2800000, guid: d36c6476c11b12540a7db0fe77386119, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pillars
+    second: {fileID: 2800000, guid: 8e13b0e6153ffe345a549ed8dcb235e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: text
+    second: {fileID: 2800000, guid: 72b779f81a5bc4943b3ea4bd7d903349, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
