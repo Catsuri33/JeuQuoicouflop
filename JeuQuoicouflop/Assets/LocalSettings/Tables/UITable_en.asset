@@ -34,6 +34,26 @@ MonoBehaviour:
     m_Localized: Press the button
     m_Metadata:
       m_Items: []
+  - m_Id: 2922683629408256
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924205327093760
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924246431272960
+    m_Localized: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932798218670080
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932830124740608
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -34,6 +34,26 @@ MonoBehaviour:
     m_Localized: Appuyer sur le bouton
     m_Metadata:
       m_Items: []
+  - m_Id: 2922683629408256
+    m_Localized: "R\xE9solution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924205327093760
+    m_Localized: "Plein \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924246431272960
+    m_Localized: Graphiques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932798218670080
+    m_Localized: Musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932830124740608
+    m_Localized: Sons
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

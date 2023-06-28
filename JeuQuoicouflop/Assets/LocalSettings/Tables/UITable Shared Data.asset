@@ -31,6 +31,26 @@ MonoBehaviour:
     m_Key: pressButton
     m_Metadata:
       m_Items: []
+  - m_Id: 2922683629408256
+    m_Key: resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924205327093760
+    m_Key: fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2924246431272960
+    m_Key: graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932798218670080
+    m_Key: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2932830124740608
+    m_Key: sounds
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

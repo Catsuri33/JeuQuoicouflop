@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestMap.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Nuketown2025.unity
+    guid: 8ca62468fa9d15c4baae294c18f29253
+  - enabled: 1
+    path: Assets/Scenes/SettingsMenu.unity
+    guid: 3af0ee6332e5fab4894c33b76a5b9232
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 427fa1eba6028804abb723dee90bb4d4, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 3dcc771a2bcd3714791ae508ade4a180, type: 2}
