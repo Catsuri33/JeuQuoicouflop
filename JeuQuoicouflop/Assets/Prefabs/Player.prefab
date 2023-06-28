@@ -103,10 +103,12 @@ GameObject:
   - component: {fileID: 4403848438413067896}
   - component: {fileID: 5249802200781917475}
   - component: {fileID: 32079410863948130}
+  - component: {fileID: 1381423621764690743}
   - component: {fileID: 1418906737163028931}
   - component: {fileID: 2426865314540050588}
   - component: {fileID: 3027992146095971970}
   - component: {fileID: 2391788184127125116}
+  - component: {fileID: 7834369888753688556}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -180,6 +182,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1381423621764690743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866205568889839655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa19d81c648c2e4cb79c4d8f1e8d786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &1418906737163028931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,3 +266,15 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7834369888753688556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866205568889839655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b71e3da7df3c7b4eace0e205e0a4d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

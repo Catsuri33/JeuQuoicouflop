@@ -30,6 +30,10 @@ MonoBehaviour:
     m_Localized: Quitter
     m_Metadata:
       m_Items: []
+  - m_Id: 2884802345013248
+    m_Localized: Appuyer sur le bouton
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
